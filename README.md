@@ -48,6 +48,6 @@ Tools and resources used in the process:
 Run on node:
  1. Git clone from https://github.com/gsdyess/Apache-Tomcat.git
   
-  2.Create cookbook: $ sudo chef-client --local-mode --runlist 'recipe[apache_http]’
+  2. Create cookbook: $ sudo chef-client --local-mode --runlist 'recipe[apache_http]’
   
-  3.Run: $. curl local host
+  3. Run: $. curl local host
