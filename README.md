@@ -39,6 +39,7 @@ Build and test process
 Tools and resources used in the process:
   - AWS CentOS VM IMages: 1 vm for development and 1 for testing
   - Nano editor
+  - git
   
   Resources: 
   - Chef Rally site
