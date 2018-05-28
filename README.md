@@ -12,7 +12,7 @@ Steps tacken to acheve the end results:
              action [:enable, :start]
           end
           
-  3. test out INSTRUCTIONS.rb: sudo chef-client --local-mode INSTRUCTIONS.rb  
+  3. test out INSTRUCTIONS.rb: $ sudo chef-client --local-mode INSTRUCTIONS.rb  
   
   4. Start and enable the Apache service: 
   
