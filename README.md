@@ -5,14 +5,13 @@ Steps tacken to acheve the end results:
   1.created directory: chef_tomcat
   
   2.created in nano INSTRUCTIONS.rd file:
-  
-     contents of file: 
-     
+ 
           package 'httpd'
 
           service 'httpd' do
              action [:enable, :start]
           end
+          
   3. created a template: $ chef generate template cookbooks/learn_chef_httpd index.html   
   
   4. Update the recipe to reference the html template
@@ -35,7 +34,7 @@ Tools and resources used in the process:
   - Google search 
        
 Run on node:
-  1. Git clone from https://github.com/gsdyess/Apache-Tomcat.git
+ 1. Git clone from https://github.com/gsdyess/Apache-Tomcat.git
   
   2.Create cookbook: $ sudo chef-client --local-mode --runlist 'recipe[apache_http]’
   
