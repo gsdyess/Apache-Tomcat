@@ -12,13 +12,25 @@ Steps tacken to acheve the end results:
              action [:enable, :start]
           end
           
-  3. created a template: $ chef generate template cookbooks/learn_chef_httpd index.html   
+  3. test out INSTRUCTIONS.rb: sudo chef-client --local-mode INSTRUCTIONS.rb  
   
-  4. Update the recipe to reference the html template
+  4. Start and enable the Apache service: 
+  
+  5. Add a home page: sudo chef-client --local-mode INSTRUCTIONS.rb
+  
+  6. Confirm your web site is running: $ curl localhost
+  
+  7. Create a cookbook: apache_http
+  
+  8. Generate cookbook: $ chef generate cookbook cookbooks/learn_chef_httpd
+          
+  9. created a template: $ chef generate template cookbooks/learn_chef_httpd index.html   
+  
+  10. Update the recipe to reference the html template
       Write out the recipe to default.rb
-  5. Run the cookbook $ sudo chef-client --local-mode --runlist 'recipe[apache_http]'
+  11. Run the cookbook $ sudo chef-client --local-mode --runlist 'recipe[apache_http]'
   
-  6. $ curl localhost
+  12. $ curl localhost
   
 Build and test process
   Built on AWS CentOS 7.4 (VM Image 1)
